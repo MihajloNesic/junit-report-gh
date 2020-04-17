@@ -3,6 +3,6 @@
 
 Automatically generate test coverage report using GitHub Workflow.
 
-![VIEW THE REPORT](https://mihajlonesic.github.io/junit-report-gh/)
+[VIEW THE REPORT](https://mihajlonesic.github.io/junit-report-gh/)
 
-This project is part of my blog post about _comparing GitLab and GitHub DevOps tools_. Read about it ![here](https://mihajlonesic.gitlab.io/archive/comparing-gitlab-and-github/).
+This project is part of my blog post about _comparing GitLab and GitHub DevOps tools_. Read about it [here](https://mihajlonesic.gitlab.io/archive/comparing-gitlab-and-github/).
