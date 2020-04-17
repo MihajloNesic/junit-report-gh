@@ -1,0 +1,32 @@
+name: Generate JUnit Report
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+      
+    - name: Build
+      run: mvn compile
+      
+    - name: Test
+      run: mvn test
+      
+    - name: Deploy to pages
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: target/jacoco-reports
+    
+      
