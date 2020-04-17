@@ -54,6 +54,7 @@ public class StringCalculatorTest {
         assertEquals(3+6+15, StringCalculator.add("3,6\n15"));
     }
 
+    @Ignore
     @Test
     public final void whenSumIsGreaterThan100ThenReturn100() {
         assertEquals(100, StringCalculator.add("55,75,25"));
